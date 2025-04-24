@@ -1,0 +1,47 @@
+body {
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .content {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+  } 
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .title h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+  }
+  
+  .title h2 {
+    color: #006EB6;
+    margin-top: 0;
+  }
+  
+  main p {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  .does-list {
+    padding-left: 20px;
+  }
+  
+  .logo {
+    display: block;
+    margin: 40px auto 0;
+    width: 150px;
+  }
+  
