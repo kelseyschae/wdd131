@@ -17,5 +17,5 @@ const two = '2';
 let result = one * two;
 console.log(result);
 
-result = one + two;
+result = one + Number(two);
 console.log(result);
