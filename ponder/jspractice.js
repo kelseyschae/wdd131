@@ -16,3 +16,6 @@ const two = '2';
 
 let result = one * two;
 console.log(result);
+
+result = one + two;
+console.log(result);
