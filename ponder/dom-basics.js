@@ -3,8 +3,11 @@ newParagraph.innerText = "Added with Javascript!";
 document.body.appendChild(newParagraph);
 
 const newImage = document.createElement("img");
+// which attribute 
 newImage.setAttribute("src", "https://picsum.photos/200");
+//what to do to variable
 newImage.setAttribute("alt", "Random image from picsum.");
+// append it onto container 
 document.body.appendChild(newImage);
 
 const newDiv = document.createElement("div");
