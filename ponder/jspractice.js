@@ -35,3 +35,8 @@ console.log(block);
 console.log(global);
 exampleFunction();
 
+// style properties 
+element.style.color = "blue";
+element.style.backgroundColor = "yellow";
+element.style.fontSize = "20px";
+
