@@ -34,3 +34,4 @@ function exampleFunction() {
 console.log(block);
 console.log(global);
 exampleFunction();
+
