@@ -21,7 +21,7 @@ console.log(result);
 
 result = one + Number(two);
 console.log(result); 
-
+ 
 // scope
 let global = "I'm global";
 
