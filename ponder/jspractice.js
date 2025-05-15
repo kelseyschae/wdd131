@@ -12,9 +12,25 @@ area = radius * radius * PI;
 
 console.log(area);
 
+// setup
+function circleArea(radius) {
+
+}
+
+function circleArea(radius) {
+  const area = radius * radius * PI;
+  return area;
+}
+
+area = circleArea(3);
+console.log("Area1:", area);
+// radius = 4;
+area = circleArea(4);
+console.log("Area2:", area);
+
 // type coersion 
 const one = 1;
-const two = '2';
+const two = '2'; 
 
 let result = one * two;
 console.log(result);
