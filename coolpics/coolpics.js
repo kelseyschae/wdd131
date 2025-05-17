@@ -36,12 +36,12 @@ function viewHandler(event) {
   document.body.insertAdjacentHTML(
     "afterbegin",
     viewerTemplate(newSrc, target.alt)
-  );
+  ); 
  
   document
     .querySelector(".close-viewer")
     .addEventListener("click", closeViewer);
-}
+} 
 
 menuButton.addEventListener("click", toggleMenu);
 gallery.addEventListener("click", viewHandler);
