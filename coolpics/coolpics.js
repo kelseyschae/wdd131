@@ -32,7 +32,7 @@ function viewHandler(event) {
   const target = event.target;
   console.dir(target);
   const imgSrc = event.target.src.split("-");
-  const newSrc = imgSrc[0] + "-full.jpeg";
+  const newSrc = imgSrc[0] + "-full.jpg";
   document.body.insertAdjacentHTML(
     "afterbegin",
     viewerTemplate(newSrc, target.alt)
