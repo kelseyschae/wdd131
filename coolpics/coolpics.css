@@ -116,7 +116,7 @@ main {
   font-size: 1.2em;
 }
 .viewer img {
-  /* grid-row: 2/3; */ 
+  /* grid-row: 2/3; */
   /* place-self: center; */
   max-height: 100%;
 }
