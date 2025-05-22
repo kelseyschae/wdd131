@@ -133,6 +133,7 @@ const students = [
         let html = `
         <p class='align'>${item.first}<p>
         <p class ='align'>${item.last}<p>
+        <hr>
         `
         name.innerHTML = html;
 
