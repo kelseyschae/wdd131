@@ -131,8 +131,8 @@ const students = [
         let name = document.createElement('section');
 
         let html = `
-        <p>${item.first}<p>
-        <p>${item.last}<p>
+        <p class='align'>${item.first}<p>
+        <p class ='align'>${item.last}<p>
         `
         name.innerHTML = html;
 
