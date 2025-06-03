@@ -28,5 +28,9 @@ function newTask() {
   
   document.querySelector('#submitTask').addEventListener('click', newTask);
   document.querySelector('#todoList').addEventListener('click', manageTasks);
+
+  e.task; queryEvent();
+  e.task; queryEvent('click', arrangeTask);
+  document.querySelectorAll(TaskManager) 
   
-  // We need to attach listeners to the submit button and the list. Listen for a click call the 'newTask' function on submit and call the 'manageTasks' function if either of the icons are clicked in the list of tasks.
+  // We need to attach listeners to the submit button and the list. Listen for a click call the 'newTask' function on submit and call the 'manageTasks' function if either of the icons are clicked in the list of tasks
