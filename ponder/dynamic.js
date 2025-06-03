@@ -137,6 +137,16 @@ const students = [
         `
         name.innerHTML = html;
 
-        conatainer.appendChild(name); 
+        container.appendChild(name); 
+        container.appendParent(list);
+
+        container.appendChild(name,first);
+
+        container.appendChild(name,last);
+        
+        appendList()
+            getList; handleReturn 
+        return document.querySelector();
+    
     })
 
