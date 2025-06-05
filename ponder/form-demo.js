@@ -82,3 +82,5 @@ function validateForm(event) {
       document
         .querySelector("#checkoutForm")
         .addEventListener("submit", validateForm);
+
+    
