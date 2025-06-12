@@ -2,7 +2,7 @@ const ditto = {
     id: 132,
     name: "ditto",
     type: "normal",
-    abilities: ["limber", "imposter"],
+    abilities: ["Limber", "Imposter"],
     base_experience: 101,
     height: 3,
     weight: 40,
