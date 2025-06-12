@@ -27,5 +27,5 @@ const ditto = {
   imgElement.src = ditto.sprite;
   
   imgElement.addEventListener("click", function () {
-    imgElement.src = ditto.transform();
+    imgElement.src = ditto.transform(); 
   });
