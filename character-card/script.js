@@ -40,7 +40,7 @@ const character = {
     const message = character.levelUp();
     updateCard();
     document.getElementById("log").textContent = message;
-  });
+  });   
   
   updateCard(); // initialize card on load
   
