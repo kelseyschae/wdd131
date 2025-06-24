@@ -96,7 +96,7 @@ h1 > img {
 .recipe__tags li {
 	padding: 0.2em 0.5em;
 	border: 1px solid;
-}
+}  
 .recipe__description {
 	display: none;
 }
