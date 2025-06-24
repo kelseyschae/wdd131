@@ -68,6 +68,15 @@ const hikes = [
   }
 ];
  const simpleList = ["oranges", "grapes", "lemons", "apples", "Bananas", "watermelons", "coconuts", "broccoli", "mango"];
+
+
+
+ let lowerList = simpleList.map(function(fruit){
+return fruit.toLowerCase
+ })
+
+ let simpleSort = simpleList.sort();
+ console.log(simpleSort);
  
  function compareFn(a,b) {
     if (a > b) {
