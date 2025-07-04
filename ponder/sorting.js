@@ -119,6 +119,7 @@ console.log(sortNums)
 
   //random 
   let random = Math.random() * hikes.length;
-  console.log(random); 
+  console.log(random);
   
+
   
