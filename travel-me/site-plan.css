@@ -9,8 +9,8 @@ Fonts are separated by a | */
   --accent1-color: #F45B69;
   --accent2-color: #F4E9CD;
 
-  --heading-font: 'Playfair Display', serif;
-  --paragraph-font: 'Open Sans', sans-serif;
+  --heading-font: 'Poppins';
+  --paragraph-font: 'Lora';
 
   --headline-color-on-white: var(--primary-color);
   --headline-color-on-color: white;
