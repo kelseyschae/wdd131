@@ -4,10 +4,10 @@ Fonts are separated by a | */
 @import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
 
 :root {
-  --primary-color: #2E8BC0;
-  --secondary-color: #F9D342;
-  --accent1-color: #1C4966;
-  --accent2-color: #FFF6E0;
+  --primary-color: #468189;
+  --secondary-color: #77ACA2;
+  --accent1-color: #F45B69;
+  --accent2-color: #F4E9CD;
 
   --heading-font: 'Playfair Display', serif;
   --paragraph-font: 'Open Sans', sans-serif;
