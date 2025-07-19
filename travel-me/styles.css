@@ -46,7 +46,7 @@ header {
 }
 
 .hero-header {
-    background-image: url("images/brazil.jpg"); /* Replace with your actual image path */
+    background-image: url("images/brazil.jpg");
     background-size: cover;
     background-position: center;
     height: 250px;
@@ -57,13 +57,13 @@ header {
   }
   
   .hero-header .overlay {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(178, 213, 235, 0.4);
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;  /* Stack vertically */
-    align-items: center;      /* Center horizontally */
-    justify-content: center;  /* Center vertically */
+    flex-direction: column;  
+    align-items: center;      
+    justify-content: center;  
     padding-top: 1rem;
     text-align: center;
   }
@@ -206,15 +206,16 @@ footer {
 }
 
 .add-btn {
-    margin-top: 0.5rem;
-    padding: 0.4rem 1rem;
     background-color: #9b39e6;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem; 
+  transition: background-color 0.3s ease;
   }
   
   .add-btn:hover {
