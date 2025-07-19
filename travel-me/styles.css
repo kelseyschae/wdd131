@@ -57,22 +57,25 @@ header {
   }
   
   .hero-header .overlay {
-    background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for contrast */
+    background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;  /* Stack vertically */
+    align-items: center;      /* Center horizontally */
+    justify-content: center;  /* Center vertically */
     padding-top: 1rem;
+    text-align: center;
   }
   
   .hero-header .logo {
-    width: 150px;
+    width: 180px;
     height: auto;
     border-radius: 12px;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    display: block;
   }
+  
   
   .hero-header nav a {
     margin: 0 1rem;
