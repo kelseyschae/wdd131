@@ -160,6 +160,22 @@ footer {
   margin-top: 2em;
 }
 
+.add-btn {
+    margin-top: 0.5rem;
+    padding: 0.4rem 1rem;
+    background-color: #9b39e6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-btn:hover {
+    background-color: #6d28b1;
+  }
+  
 /* Responsive card layout for multiple destinations (optional) */
 /*.destinations-grid {
   display: grid;
