@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Bucket List - Travel Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins:wght@600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Travel Me Logo" class="logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="bucketlist.html">Bucket List</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bucket-list-section">
+      <h1>My Travel Bucket List</h1>
+      <ul id="bucketListContainer" class="bucket-list"></ul>
+      <button id="clearListBtn" class="clear-btn">Clear Bucket List</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Travel Me</p>
+  </footer>
+
+  <script>
+    const container = document.getElementById("bucketListContainer");
+    const clearBtn = document.getElementById("clearListBtn");
+
+    function renderBucketList() {
+      const list = JSON.parse(localStorage.getItem("bucketList")) || [];
+      container.innerHTML = "";
+
+      if (list.length === 0) {
+        container.innerHTML = "<p>Your bucket list is empty. Add some destinations!</p>";
+        clearBtn.style.display = "none";
+        return;
+      }
+
+      list.forEach(destination => {
+        const li = document.createElement("li");
+        li.textContent = destination;
+        container.appendChild(li);
+      });
+
+      clearBtn.style.display = "inline-block";
+    }
+
+    clearBtn.addEventListener("click", () => {
+      if (confirm("Are you sure you want to clear your entire bucket list?")) {
+        localStorage.removeItem("bucketList");
+        renderBucketList();
+      }
+    });
+
+    document.addEventListener("DOMContentLoaded", renderBucketList);
+  </script>
+</body>
+</html>
