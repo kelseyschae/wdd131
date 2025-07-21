@@ -9,10 +9,13 @@ const quotes = [
   
   function generateQuote() {
     const randomIndex = Math.floor(Math.random() * quotes.length);
-    document.getElementById("quote").textContent = quotes[randomIndex];
+    const quoteElement = document.getElementById("quote");
+    if (quoteElement) {
+      quoteElement.textContent = quotes[randomIndex];
+    }
   }
   
-  //Add to Bucket List 
+  //Bucket list
   function addToBucketList(destination) {
     let bucketList = JSON.parse(localStorage.getItem("bucketList")) || [];
   
@@ -25,20 +28,59 @@ const quotes = [
     }
   }
   
- 
+  //DOM content loaded
   document.addEventListener("DOMContentLoaded", () => {
-    generateQuote(); // Show a quote on page load
+    // Show a quote on load
+    generateQuote();
   
+
     const cards = document.querySelectorAll(".card");
     cards.forEach(card => {
-      const destination = card.querySelector("h3").textContent;
+      const destination = card.querySelector("h3")?.textContent;
   
-      const addButton = document.createElement("button");
-      addButton.textContent = "Add to Bucket List";
-      addButton.classList.add("add-btn");
-      addButton.onclick = () => addToBucketList(destination);
+      if (destination) {
+        const addButton = document.createElement("button");
+        addButton.textContent = "Add to Bucket List";
+        addButton.classList.add("add-btn");
   
-      card.appendChild(addButton);
+        addButton.addEventListener("click", () => addToBucketList(destination));
+        card.appendChild(addButton);
+      }
     });
+  
+ 
+    const container = document.getElementById("bucketListContainer");
+    const clearBtn = document.getElementById("clearListBtn");
+  
+    if (container && clearBtn) {
+      function renderBucketList() {
+        const list = JSON.parse(localStorage.getItem("bucketList")) || [];
+        container.innerHTML = "";
+  
+        if (list.length === 0) {
+          container.innerHTML = "<p>Your bucket list is empty. Add some destinations!</p>";
+          clearBtn.style.display = "none";
+          return;
+        }
+  
+        list.forEach(destination => {
+          const li = document.createElement("li");
+          li.textContent = destination;
+          container.appendChild(li);
+        });
+  
+        clearBtn.style.display = "inline-block";
+      }
+  
+      clearBtn.addEventListener("click", () => {
+        if (confirm("Are you sure you want to clear your entire bucket list?")) {
+          localStorage.removeItem("bucketList");
+          renderBucketList();
+        }
+      });
+  
+      renderBucketList();
+    }
   });
+  
   
