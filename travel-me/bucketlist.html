@@ -17,10 +17,26 @@
   </header>
 
   <main>
-    <section class="bucket-list-section">
+    <section class="bucket-list-hero">
       <h1>My Travel Bucket List</h1>
+      <p>These are the destinations I can't wait to explore!</p>
+    </section>
+
+    <section class="bucket-list-section">
+      <h2>Saved Destinations</h2>
       <ul id="bucketListContainer" class="bucket-list"></ul>
       <button id="clearListBtn" class="clear-btn">Clear Bucket List</button>
+    </section>
+
+    <section class="tips-section">
+      <h2>Travel Planning Tips & Tricks</h2>
+      <ul class="tips-list">
+        <li><strong>🗺 Research Smart:</strong> Use Google Maps, travel blogs, and YouTube to visualize destinations before booking.</li>
+        <li><strong>📅 Be Flexible:</strong> Traveling off-peak can save money and avoid crowds—shoulder seasons are golden.</li>
+        <li><strong>💰 Budget Wisely:</strong> Track expenses with travel apps and use alerts to snag cheap flights and stays.</li>
+        <li><strong>🗣 Learn Local Basics:</strong> A simple “hello” or “thank you” in the local language can create memorable moments.</li>
+        <li><strong>🎒 Pack Light:</strong> Stick to essentials and versatile clothing. Always bring a charger, reusable water bottle, and small first-aid kit.</li>
+      </ul>
     </section>
   </main>
 
@@ -37,7 +53,7 @@
       container.innerHTML = "";
 
       if (list.length === 0) {
-        container.innerHTML = "<p>Your bucket list is empty. Add some destinations!</p>";
+        container.innerHTML = "<p class='empty-message'>Your bucket list is empty. Add some destinations!</p>";
         clearBtn.style.display = "none";
         return;
       }
@@ -45,6 +61,7 @@
       list.forEach(destination => {
         const li = document.createElement("li");
         li.textContent = destination;
+        li.className = "bucket-list-item";
         container.appendChild(li);
       });
 
@@ -62,3 +79,4 @@
   </script>
 </body>
 </html>
+
