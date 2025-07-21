@@ -1,4 +1,4 @@
-// === Random Travel Quotes ===
+//Random quotes
 const quotes = [
     "Travel makes one modest. You see what a tiny place you occupy in the world. – Gustave Flaubert",
     "The world is a book, and those who do not travel read only one page. – Saint Augustine",
@@ -12,7 +12,7 @@ const quotes = [
     document.getElementById("quote").textContent = quotes[randomIndex];
   }
   
-  // === Add to Bucket List ===
+  //Add to Bucket List 
   function addToBucketList(destination) {
     let bucketList = JSON.parse(localStorage.getItem("bucketList")) || [];
   
@@ -25,7 +25,7 @@ const quotes = [
     }
   }
   
-  // === Dynamically add "Add to Bucket List" buttons ===
+ 
   document.addEventListener("DOMContentLoaded", () => {
     generateQuote(); // Show a quote on page load
   
