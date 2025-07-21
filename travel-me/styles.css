@@ -216,6 +216,7 @@ footer {
   margin-top: 2em;
 }
 
+
 .add-btn {
     background-color: #9b39e6;
   color: #fff;
@@ -232,52 +233,84 @@ footer {
   .add-btn:hover {
     background-color: #6d28b1;
   }
-  
-/* Responsive card layout for multiple destinations (optional) */
-/*.destinations-grid {
-  display: grid;
-  gap: 2em;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  margin-top: 2em;
-}
 
-.travel-cards h2 {
+  .bucket-list-hero {
+    background-color: #f1faee;
     text-align: center;
-    margin-bottom: 1em;
+    padding: 2rem 1rem;
   }
   
-  .card-grid {
+  .bucket-list-section {
+    background-color: #ffffff;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .bucket-list {
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 1.5rem auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    gap: 1rem;
   }
   
-  .card {
-    background-color: white;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  .bucket-list-item {
+    background-color: #e7f5f3;
+    border-left: 5px solid #9b39e6;
+    padding: 1rem;
+    border-radius: 10px;
+    font-family: 'Lora', serif;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    text-align: left;
+  }
+  
+  .clear-btn {
+    background-color: #9b39e6;
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s;
+  }
+  
+  .clear-btn:hover {
+    background-color: #7c2ec5;
+  }
+  
+  .empty-message {
+    font-style: italic;
+    color: #555;
+  }
+  
+  .tips-section {
+    background-color: #a8dadc;
+    padding: 2rem 1rem;
+  }
+  
+  .tips-section h2 {
     text-align: center;
-    transition: transform 0.3s ease;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
   }
   
-  .card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+  .tips-list {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
   }
   
-  .card h3 {
-    font-family: var(--heading-font);
-    margin: 0.5em 0;
+  .tips-list li {
+    background-color: #f1faee;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-left: 4px solid #1e1e1e;
+    border-radius: 8px;
+    font-family: 'Lora', serif;
   }
   
-  .card p {
-    padding: 0 1em 1em;
-    color: #444;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
   
